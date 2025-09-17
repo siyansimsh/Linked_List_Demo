@@ -58,31 +58,31 @@ delete 19 -> OK
 
 #### `Node* create_node(int x)`
 
-建立一個新的節點，並將其資料初始化為 `x`。成功時回傳指向新節點的指標，若記憶體分配失敗則終止程式。
+- 建立一個新的節點，並將其資料初始化為 `x`。成功時回傳指向新節點的指標，若記憶體分配失敗則終止程式。
 
 #### `void insert_head(Node **head, int x)`
 
-在串列的頭部插入一個值為 `x` 的新節點。此函式會修改 `head` 指標。
+- 在串列的頭部插入一個值為 `x` 的新節點。此函式會修改 `head` 指標。
 
 #### `void insert_tail(Node **head, int x)`
 
-在串列的尾部插入一個值為 `x` 的新節點。若串列為空，新節點將成為頭節點。
+- 在串列的尾部插入一個值為 `x` 的新節點。若串列為空，新節點將成為頭節點。
 
 #### `Node* search(Node *head, int target)`
 
-在串列中搜尋值為 `target` 的節點。若找到，回傳指向該節點的指標；否則回傳 `NULL`。
+- 在串列中搜尋值為 `target` 的節點。若找到，回傳指向該節點的指標；否則回傳 `NULL`。
 
 #### `bool delete_value(Node **head, int target)`
 
-刪除串列中第一個值等於 `target` 的節點。若刪除成功，回傳 `true`；若找不到該節點，回傳 `false`。
+- 刪除串列中第一個值等於 `target` 的節點。若刪除成功，回傳 `true`；若找不到該節點，回傳 `false`。
 
 #### `void traverse_print(Node *head)`
 
-走訪整個串列，並將每個節點的 `data` 印出至螢幕。
+- 訪整個串列，並將每個節點的 `data` 印出至螢幕。
 
 #### `void free_list(Node **head)`
 
-釋放整個串列所有節點佔用的記憶體，並將原始的 `head` 指標設為 `NULL`，以避免懸置指標 (Dangling Pointer) 的問題。
+- 釋放整個串列所有節點佔用的記憶體，並將原始的 `head` 指標設為 `NULL`，以避免懸置指標 (Dangling Pointer) 的問題。
 
 -----
 
