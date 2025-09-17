@@ -16,7 +16,7 @@
 
 ## Compilation & Execution
 
-此專案僅包含一個原始碼檔案 `Linkedlist_Demo.c`。您可以使用任何標準的 C 編譯器（例如 GCC）來進行編譯。
+此專案包含一個原始碼檔案 `Linkedlist_Demo.c`。您可以使用任何標準的 C 編譯器（例如 GCC）來進行編譯。
 
 1.  **編譯程式碼**
 
