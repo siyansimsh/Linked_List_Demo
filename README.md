@@ -14,7 +14,7 @@
   - **串列走訪**: 遍歷並印出所有節點的資料。
   - **記憶體管理**: 提供函式以安全地釋放整個串列佔用的記憶體，避免洩漏。
 
-## 如何編譯與執行 (Compilation & Execution)
+## Compilation & Execution
 
 此專案僅包含一個原始碼檔案 `linked_list_demo.c`。您可以使用任何標準的 C 編譯器（例如 GCC）來進行編譯。
 
@@ -37,7 +37,7 @@
     ./linked_list_demo
     ```
 
-### 預期輸出 (Expected Output)
+### Expected Output
 
 執行後，您應該會看到以下輸出，展示了對鏈結串列的一系列操作結果：
 
@@ -54,7 +54,7 @@ delete 19 -> OK
 5 11 
 ```
 
-## API 文件 (API Documentation)
+## API Documentation
 
 #### `Node* create_node(int x)`
 
@@ -86,7 +86,7 @@ delete 19 -> OK
 
 -----
 
-## 核心觀念：為何使用 `Node **head`
+## Why use `Node **head` ?
 
 在此專案中，凡是**可能會修改到串列頭部 `head` 指標**的函式（如插入、刪除、清空），其參數皆為 `Node **head`（指標的指標）。
 
